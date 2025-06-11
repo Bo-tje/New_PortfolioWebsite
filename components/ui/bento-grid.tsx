@@ -128,7 +128,7 @@ export const BentoGridItem = ({
             )}
 
             {id === 11 && (
-                <div className="absolute z-10 flex ">
+                <div className="absolute z-10 flex  justify-center items-center w-full h-full lg:rotate-90 -top-35 -bottom-3">
                             <TextHoverEffectDemo />
                 </div>
             )}

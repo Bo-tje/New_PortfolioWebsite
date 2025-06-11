@@ -39,7 +39,7 @@ export const TextHoverEffect = ({
             onMouseMove={(e) => setCursor({ x: e.clientX, y: e.clientY })}
             className="select-none"
             preserveAspectRatio="xMidYMid meet"
-            style={{ transform: 'rotate(90deg) scale(2)' }}  // Added scale
+            style={{ transform: ' scale(2) ' }}  // Added scale
         >
             <defs>
                 <linearGradient
@@ -95,7 +95,7 @@ export const TextHoverEffect = ({
                 textAnchor="middle"
                 dominantBaseline="middle"
                 strokeWidth="0.3"
-                className="fill-transparent stroke-neutral-200 font-[helvetica] text-9xl font-bold dark:stroke-white-400"
+                className="fill-transparent stroke-neutral-200 font-[helvetica] text-7xl lg:text-9xl font-bold dark:stroke-white-400"
                 style={{ opacity: hovered ? 1 : 1 }}
             >
                 {text}
@@ -106,7 +106,7 @@ export const TextHoverEffect = ({
                 textAnchor="middle"
                 dominantBaseline="middle"
                 strokeWidth="0.3"
-                className="fill-transparent stroke-neutral-200 font-[helvetica] text-9xl font-bold dark:stroke-neutral-800"
+                className="fill-transparent stroke-neutral-200 font-[helvetica] text-7xl lg:text-9xl font-bold dark:stroke-neutral-800"
                 initial={{ strokeDashoffset: 1000, strokeDasharray: 1000 }}
                 animate={{
                     strokeDashoffset: 0,
@@ -127,7 +127,7 @@ export const TextHoverEffect = ({
                 stroke="url(#textGradient)"
                 strokeWidth="0.3"
                 mask="url(#textMask)"
-                className="fill-transparent font-[helvetica] text-9xl font-bold"
+                className="fill-transparent font-[helvetica] text-7xl lg:text-9xl font-bold"
             >
                 {text}
             </text>

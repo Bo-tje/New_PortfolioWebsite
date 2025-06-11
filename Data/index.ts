@@ -68,7 +68,7 @@ export const navItems = [
       id: 11,
       title: "",
       description: "",
-      className: "md:col-span-1 md:row-span-3",
+      className: "lg:col-span-1 lg:row-span-3 md:col-span-6",
       imgClassName: "",
       titleClassName: "",
       img: "",
